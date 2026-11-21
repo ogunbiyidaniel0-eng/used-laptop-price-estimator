@@ -1,0 +1,25 @@
+Non-Functional Requirements
+
+1. Performance: The system should generate estimated laptop prices within 3–5 seconds after the user submits the laptop specifications.
+
+2. Accuracy: The machine learning model should provide reasonably accurate price predictions based on the laptop's specifications and historical market data.
+
+3. Usability: The system should have a simple, user-friendly interface that allows users to enter laptop specifications without difficulty.
+
+4. Reliability: The system should consistently produce predictions without crashing or returning unexpected errors.
+
+5. Security: The system should protect users' information and prevent unauthorized access to the system and its database.
+
+6. Scalability: The system should be capable of handling an increasing number of users and laptop prediction requests without significant performance degradation.
+
+7. Maintainability: The system should be designed in a way that allows developers to update the machine learning model, fix bugs, and add new features easily.
+
+8. Availability: The system should be accessible to users whenever the application is deployed and its hosting services are operational.
+
+9. Compatibility: The application should work properly on commonly used web browsers, including Google Chrome, Microsoft Edge, and Firefox.
+
+10. Portability: The system should be deployable on different operating systems and hosting environments with minimal modifications.
+
+11. Data Integrity: The system should validate input data and prevent invalid laptop specifications from being used for price prediction.
+
+12. Model Efficiency: The machine learning model should use computational resources efficiently and generate predictions without requiring excessive memory or processing power.
