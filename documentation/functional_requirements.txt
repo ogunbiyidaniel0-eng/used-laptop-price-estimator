@@ -1,0 +1,50 @@
+FUNCTIONAL REQUIREMENTS: USED LAPTOP PRICE ESTIMATOR (MACHINE LEARNING)
+
+FR-1  Setup
+      The notebook shall install and import the needed libraries (pandas, numpy, matplotlib, scikit-learn).
+
+FR-2  Load data
+      The notebook shall load a used-laptop dataset (CSV) from an upload, Google Drive, or a URL.
+
+FR-3  Inspect data
+      The notebook shall show the first rows, the number of rows and columns, the data types, and the missing values.
+
+FR-4  Clean data
+      The notebook shall remove duplicates, handle missing values, convert text to numbers (e.g. "8GB" to 8), and remove unrealistic prices.
+
+FR-5  Explore data
+      The notebook shall show at least three charts (price by brand, price vs RAM, correlation heatmap), each with a one-sentence explanation.
+
+FR-6  Prepare features
+      The notebook shall select the input features (brand, CPU, RAM, storage, screen size, age) and encode categorical features as numbers.
+
+FR-7  Split data
+      The notebook shall split the data into 80% training and 20% testing with a fixed random seed (random_state=42).
+
+FR-8  Train models
+      The notebook shall train a baseline model (Linear Regression) and at least one stronger model (Random Forest).
+
+FR-9  Evaluate models
+      The notebook shall calculate MAE and R-squared for each model on the test set and show them in a comparison table.
+
+FR-10 Visualize results
+      The notebook shall plot predicted price against actual price for the best model.
+
+FR-11 Explain the model
+      The notebook shall show a feature importance chart indicating which specs affect price most.
+
+FR-12 Predict a price
+      The notebook shall provide a function predict_price() that takes a laptop's specs and returns an estimated price.
+
+FR-13 Validate input
+      The prediction function shall reject missing or impossible values (e.g. RAM of 0) with a clear message.
+
+FR-14 Save model
+      The notebook shall save the trained model with joblib to Google Drive.
+
+FR-15 Conclusion
+      The notebook shall end with a short summary of the best model, its accuracy, its limitations, and ideas for improvement.
+
+OPTIONAL
+FR-16 Provide a simple input form (Gradio or ipywidgets) for entering specs and viewing the estimate.
+FR-17 Train a third model (Gradient Boosting) and compare it.
