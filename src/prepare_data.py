@@ -1,9 +1,13 @@
+
 import pandas as pd
 import os
 import re
 
 
-# Load dataset
+# ==========================================
+# LOAD DATASET
+# ==========================================
+
 file_path = os.path.abspath(
     os.path.join(
         os.path.dirname(__file__),
@@ -19,7 +23,24 @@ print("Dataset loaded successfully!")
 
 
 # ==========================================
-# 1. RAM CONVERSION
+# 1. REMOVE DUPLICATE RECORDS
+# ==========================================
+
+original_count = len(df)
+
+df = df.drop_duplicates(
+    subset=df.columns.drop("ID"),
+    keep="first"
+)
+
+removed_count = original_count - len(df)
+
+print(f"\nDuplicate records removed: {removed_count}")
+print(f"Remaining records: {len(df)}")
+
+
+# ==========================================
+# 2. RAM CONVERSION
 # ==========================================
 
 df["RAM_GB"] = df["RAM"].str.extract(r"(\d+)").astype(int)
@@ -29,7 +50,7 @@ print(df[["RAM", "RAM_GB"]].drop_duplicates())
 
 
 # ==========================================
-# 2. STORAGE CONVERSION
+# 3. STORAGE CONVERSION
 # ==========================================
 
 def convert_storage(storage):
@@ -56,6 +77,10 @@ def convert_storage(storage):
         for value, unit in emmc_values:
             ssd_gb += int(value) * (1024 if unit == "TB" else 1)
 
+    # Mark unknown SSD capacity as missing
+    if re.search(r"HDD\s*\+\s*SSD", storage):
+        ssd_gb = float("nan")
+
     return pd.Series([hdd_gb, ssd_gb])
 
 
@@ -66,7 +91,7 @@ print(df[["Storage", "HDD_GB", "SSD_GB"]].drop_duplicates())
 
 
 # ==========================================
-# 3. PROCESSOR STANDARDISATION
+# 4. PROCESSOR STANDARDISATION
 # ==========================================
 
 def standardise_processor(processor):
@@ -111,7 +136,7 @@ print(df[["Processor", "Processor_Family"]].drop_duplicates())
 
 
 # ==========================================
-# 4. GENERATION STANDARDISATION
+# 5. GENERATION STANDARDISATION
 # ==========================================
 
 def standardise_generation(generation):
@@ -142,7 +167,7 @@ print(
 
 
 # ==========================================
-# 5. LAPTOP MODEL FAMILY STANDARDISATION
+# 6. LAPTOP MODEL FAMILY STANDARDISATION
 # ==========================================
 
 def standardise_model(row):
@@ -238,7 +263,7 @@ print(df["Model_Family"].value_counts())
 
 
 # ==========================================
-# 6. DATASET SUMMARY
+# 7. DATASET SUMMARY
 # ==========================================
 
 print("\nFinal dataset shape:")
@@ -256,3 +281,24 @@ print([
 ])
 
 print("\nFeature engineering completed successfully!")
+
+
+# ==========================================
+# 8. FEATURE ENGINEERING QUALITY CHECK
+# ==========================================
+
+print("\nMissing values after feature engineering:")
+print(df.isnull().sum())
+
+print("\nDuplicate records (excluding ID):")
+print(df.drop(columns=["ID"]).duplicated().sum())
+
+print("\nStorage values requiring review:")
+print(
+    df[df["Storage"].str.contains(r"HDD\s*\+\s*SSD", case=False)][
+        ["Storage", "HDD_GB", "SSD_GB"]
+    ]
+)
+
+print("\nModel families classified as Other:")
+print(df[df["Model_Family"] == "Other"][["Brand", "Model"]])
