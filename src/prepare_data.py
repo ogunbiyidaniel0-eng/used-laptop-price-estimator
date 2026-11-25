@@ -92,6 +92,29 @@ df["Processor_Family"] = df["Processor"].apply(standardise_processor)
 print("\nStandardised processor categories:")
 print(df[["Processor", "Processor_Family"]].drop_duplicates())
 
+# Standardise laptop generations
+def standardise_generation(generation):
+    generation = generation.strip()
+
+    if generation.lower() == "brasswell":
+        return "Braswell"
+
+    return generation
+
+
+df["Generation_Category"] = df["Generation"].apply(standardise_generation)
+
+# Extract Intel generation numbers
+df["Generation_Number"] = (
+    df["Generation_Category"]
+    .where(df["Generation_Category"].str.contains("Gen", case=False))
+    .str.extract(r"(\d+)")
+    .astype(float)
+)
+
+print("\nStandardised generations:")
+print(df[["Generation", "Generation_Category", "Generation_Number"]].drop_duplicates())
+
 
 print("\nProcessor values:")
 print(df["Processor"].unique())
