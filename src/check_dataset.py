@@ -23,3 +23,11 @@ print(df.duplicated().sum())
 
 print("\nDataset information:")
 df.info()
+print("\nRAM values:")
+print(df["RAM"].unique())
+
+print("\nStorage values:")
+print(df["Storage"].unique())
+
+print("\nGeneration values:")
+print(df["Generation"].unique())
