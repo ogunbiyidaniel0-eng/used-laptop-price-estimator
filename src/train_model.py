@@ -1,3 +1,4 @@
+import joblib
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.impute import SimpleImputer
@@ -156,3 +157,29 @@ for model_name, model in models.items():
     print(f"{model_name} trained successfully!")
 
 print("\nAll machine learning models have been trained!")
+
+# ==========================================
+# 8. SAVE TRAINED MODELS
+# ==========================================
+
+models_path = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "models"
+    )
+)
+
+os.makedirs(models_path, exist_ok=True)
+
+for model_name, pipeline in trained_models.items():
+
+    filename = model_name.lower().replace(" ", "_") + ".pkl"
+
+    save_path = os.path.join(models_path, filename)
+
+    joblib.dump(pipeline, save_path)
+
+    print(f"{model_name} saved successfully!")
+
+print("\nAll trained models saved successfully!")
