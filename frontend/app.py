@@ -1,9 +1,9 @@
-
 import numpy as np
 import streamlit as st
 import pandas as pd
 import joblib
 import os
+import textwrap
 
 # ==========================================
 # CONFIGURATION
@@ -67,8 +67,13 @@ footer {
     visibility: hidden;
 }
 
+[data-testid="stDeployButton"],
 .stDeployButton {
-    display: none;
+    display: none !important;
+}
+
+[data-testid="stToolbar"] {
+    display: none !important;
 }
 
 /* TYPOGRAPHY */
@@ -285,7 +290,7 @@ div[data-testid="stNumberInput"] input:focus {
 
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0        ;
         transform: translateY(10px);
     }
     to {
@@ -518,9 +523,8 @@ if st.button("Estimate Price", use_container_width=True):
 
         prediction = selected_algorithm.predict(input_data)[0]
 
-        st.markdown(f"""
+        result_html = f"""
         <div class="result-card">
-
             <div class="result-label">
                 ESTIMATED RESALE VALUE
             </div>
@@ -533,10 +537,10 @@ if st.button("Estimate Price", use_container_width=True):
                 Prediction generated using {selected_model}.
                 Actual market prices may vary.
             </div>
-
         </div>
-        """, unsafe_allow_html=True)
+        """
 
+        st.html(result_html)
     except Exception as e:
 
         st.error(f"Prediction failed: {e}")
