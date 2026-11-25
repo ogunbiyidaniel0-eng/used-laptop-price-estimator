@@ -302,3 +302,20 @@ print(
 
 print("\nModel families classified as Other:")
 print(df[df["Model_Family"] == "Other"][["Brand", "Model"]])
+# ==========================================
+# 9. SAVE PROCESSED DATASET
+# ==========================================
+
+output_path = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "dataset",
+        "processed_laptops.csv"
+    )
+)
+
+df.to_csv(output_path, index=False)
+
+print("\nProcessed dataset saved successfully!")
+print(f"Saved to: {output_path}")
