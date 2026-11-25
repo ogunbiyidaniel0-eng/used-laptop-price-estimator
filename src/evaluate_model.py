@@ -207,3 +207,38 @@ cv_output_path = os.path.join(
 cv_results_df.to_csv(cv_output_path, index=False)
 
 print("\nCross-validation results saved successfully!")
+# ==========================================
+# 7. INSPECT INDIVIDUAL MODEL PREDICTIONS
+# ==========================================
+
+print("\n==========================================")
+print("INDIVIDUAL PREDICTION INSPECTION")
+print("==========================================")
+
+prediction_results = pd.DataFrame({
+    "Actual Price (NGN)": y_test.values
+})
+
+for model_name in ["Linear Regression", "Random Forest"]:
+
+    predictions = models[model_name].predict(X_test)
+
+    prediction_results[f"{model_name} Prediction"] = predictions
+
+    prediction_results[f"{model_name} Absolute Error"] = (
+        abs(y_test.values - predictions)
+    )
+
+print("\nFirst 10 prediction comparisons:")
+print(prediction_results.head(10).to_string(index=False))
+
+# Save prediction inspection results
+inspection_path = os.path.join(
+    base_path,
+    "documentation",
+    "prediction_inspection.csv"
+)
+
+prediction_results.to_csv(inspection_path, index=False)
+
+print("\nPrediction inspection results saved successfully!")
