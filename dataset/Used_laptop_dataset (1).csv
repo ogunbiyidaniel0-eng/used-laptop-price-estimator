@@ -1,0 +1,301 @@
+ID,Brand,Model,Processor,Generation,RAM,Storage,Condition,Price (NGN)
+HP001,HP,EliteBook 840 G5,Intel Core i5,8th Gen,16GB,512GB SSD,Used,485000
+HP002,HP,Chromebook 11 G3,Intel Celeron,Brasswell,4GB,16GB SSD,Used,60000
+HP003,HP,ProBook 650 G1,Intel Core i5,4th Gen,8GB,256GB SSD,Used,230000
+HP004,HP,ZBook Fury 15 G8,Intel Core i7,11th Gen,32GB,512GB SSD,Used,1100000
+HP005,HP,Pavilion 15,Intel Core i5,11th Gen,8GB,256GB SSD,Used,380000
+HP006,HP,EliteBook 840 G3,Intel Core i5,6th Gen,8GB,256GB SSD,Used,330000
+HP007,HP,Omen 15,Intel Core i7,10th Gen,16GB,512GB SSD,Used,1180000
+HP008,HP,ProBook 440 G8,Intel Core i5,11th Gen,16GB,256GB SSD,Used,320000
+HP009,HP,Chromebook 11,AMD A4,Brasswell,4GB,32GB eMMC,Used,75000
+HP010,HP,ZBook 15 G2,Intel Core i7,4th Gen,32GB,512GB SSD,Used,350000
+HP011,HP,EliteBook 840 G4,Intel Core i5,7th Gen,12GB,256GB SSD,Used,400000
+HP012,HP,ProBook 635 Aero G8,AMD Ryzen 5,7th Gen,16GB,256GB SSD,Used,320000
+HP013,HP,Envy x360,Intel Core i5,7th Gen,8GB,256GB SSD,Used,380000
+HP014,HP,ZBook 14u G6,Intel Core i7,8th Gen,16GB,1TB SSD,Used,620000
+HP015,HP,HP 250 G4,AMD Ryzen 3,Brasswell,4GB,32GB eMMC,Used,100000
+HP016,HP,Omen 15-dc1xxx,Intel Core i5,8th Gen,16GB,512GB SSD,Used,750000
+HP017,HP,EliteBook 850 G6,Intel Core i5,8th Gen,8GB,512GB SSD,Used,310000
+HP018,HP,Chromebook x360 11 G1 EE,Intel Celeron,Brasswell,4GB,128GB SSD,Used,150000
+HP019,HP,ZBook Firefly 14 G7,Intel Core i7,10th Gen,16GB,512GB SSD,Used,550000
+HP020,HP,Pavilion,AMD Ryzen 7,10th Gen,8GB,256GB SSD,Used,1025000
+HP021,HP,EliteBook 1040 G3,Intel Core i7,6th Gen,16GB,512GB SSD,Used,450000
+HP022,HP,Omen 15-dh002nr,Intel Core i7,8th Gen,8GB,256GB SSD,Used,650000
+HP023,HP,ProBook 650 G3,Intel Core i5,7th Gen,8GB,256GB SSD,Used,220000
+HP024,HP,Spectre x360 14,Intel Core i7,8th Gen,16GB,512GB SSD,Used,550000
+HP025,HP,ZBook 14u G4,Intel Core i7,7th Gen,8GB,256GB SSD,Used,220000
+HP026,HP,EliteBook 840 G6,Intel Core i5,8th Gen,8GB,512GB SSD,Used,320000
+HP027,HP,Chromebook 11 G1,Intel Celeron,Brasswell,4GB,32GB eMMC,Used,65000
+HP028,HP,ProBook 440 G9,Intel Core i7,12th Gen,16GB,512GB SSD,Used,570000
+HP029,HP,HP 2000 Series,Intel Celeron,Brasswell,8GB,256GB SSD,Used,160000
+HP030,HP,ZBook 15 G5,Intel Core i7,8th Gen,16GB,512GB SSD,Used,650000
+HP031,HP,EliteBook 1030 G2 x360,Intel Core i5,7th Gen,8GB,256GB SSD,Used,600000
+HP032,HP,Omen 15,Intel Core i7,9th Gen,16GB,256GB SSD,Used,1190000
+HP033,HP,EliteBook 840 G5,Intel Core i5,8th Gen,8GB,256GB SSD,Used,260000
+HP034,HP,ZBook Firefly G8,Intel Core i7,11th Gen,16GB,256GB SSD,Used,500000
+HP035,HP,Pavilion 14,Intel Core i5,7th Gen,8GB,256GB SSD,Used,280000
+HP036,HP,ProBook 650 G2,Intel Core i5,6th Gen,8GB,256GB SSD,Used,210000
+HP037,HP,EliteBook 1040 G2,Intel Core i5,5th Gen,8GB,256GB SSD,Used,350000
+HP038,HP,ZBook 15 G3,Intel Core i7,6th Gen,16GB,512GB SSD,Used,450000
+HP039,HP,Spectre x360,Intel Core i7,6th Gen,16GB,512GB SSD,Used,480000
+HP040,HP,HP 15,Intel Core i5,7th Gen,8GB,256GB SSD,Used,250000
+HP041,HP,ZBook 14u G5,Intel Core i7,8th Gen,16GB,512GB SSD,Used,450000
+HP042,HP,EliteBook 840 G3,Intel Core i5,6th Gen,8GB,256GB SSD,Used,350000
+HP043,HP,Omen X,Intel Core i5,8th Gen,8GB,2TB HDD + 256GB SSD,Used,650000
+HP044,HP,ProBook 450 G6,Intel Core i5,8th Gen,8GB,256GB SSD,Used,280000
+HP045,HP,Chromebook 14 G2,Intel Celeron,Brasswell,4GB,16GB SSD,Used,59999
+HP046,HP,ZBook 15u G3,Intel Core i7,7th Gen,8GB,256GB SSD,Used,320000
+HP047,HP,EliteBook 840 G5,Intel Core i5,8th Gen,16GB,512GB SSD,Used,485000
+HP048,HP,ProBook 650 G3,Intel Core i5,7th Gen,8GB,256GB SSD,Used,220000
+HP049,HP,Envy 13 x360,Intel Core i7,6th Gen,16GB,512GB SSD,Used,420000
+HP050,HP,ZBook 15 G5,Intel Core i7,8th Gen,16GB,512GB SSD,Used,650000
+DELL001,Dell,Inspiron 5559,Intel Core i5-6200U,6th Gen,8GB,256GB SSD,Used,205000
+DELL002,Dell,Latitude 5410,Intel Core i5,10th Gen,16GB,256GB SSD,Used,380000
+DELL003,Dell,Latitude 7490,Intel Core i7,8th Gen,8GB,256GB SSD,Used,320000
+DELL004,Dell,Latitude 7280,Intel Core i5,6th Gen,8GB,128GB SSD,Used,190000
+DELL005,Dell,Inspiron 15 3511,Intel Core i5,11th Gen,8GB,256GB SSD,Used,320000
+DELL006,Dell,Latitude 5400,Intel Core i5,8th Gen,8GB,256GB SSD,Used,275000
+DELL007,Dell,Latitude 7390,Intel Core i7,8th Gen,16GB,256GB SSD,Used,485000
+DELL008,Dell,Latitude 7490,Intel Core i5,8th Gen,16GB,256GB SSD,Used,185000
+DELL009,Dell,Inspiron 15 7548,Intel Core i7,5th Gen,16GB,128GB SSD,Used,350000
+DELL010,Dell,Latitude 5410,Intel Core i3,10th Gen,8GB,256GB SSD,Used,260000
+DELL011,Dell,Latitude 7480,Intel Core i5,6th Gen,16GB,256GB SSD,Used,300000
+DELL012,Dell,Latitude 5400,Intel Core i7,8th Gen,16GB,512GB SSD,Used,320000
+DELL013,Dell,Inspiron 14 3452,Intel Pentium,Brasswell,4GB,128GB SSD,Used,150000
+DELL014,Dell,Latitude 5310,Intel Core i5,10th Gen,8GB,256GB SSD,Used,320000
+DELL015,Dell,Latitude 7490,Intel Core i5,8th Gen,8GB,256GB SSD,Used,255000
+DELL016,Dell,Inspiron 14 5410,Intel Core i5,10th Gen,8GB,256GB SSD,Used,340000
+DELL017,Dell,Latitude 5400,Intel Core i5,8th Gen,8GB,256GB SSD,Used,250000
+DELL018,Dell,Latitude 7420,Intel Core i7,11th Gen,32GB,512GB SSD,Used,620000
+DELL019,Dell,Latitude E7470,Intel Core i5,6th Gen,8GB,256GB SSD,Used,250000
+DELL020,Dell,Inspiron 15 3567,Intel Core i3-6006U,6th Gen,8GB,256GB SSD,Used,150000
+DELL021,Dell,Latitude 5410,Intel Core i5,10th Gen,8GB,256GB SSD,Used,261000
+DELL022,Dell,Latitude 7490,Intel Core i5,8th Gen,8GB,256GB SSD,Used,280000
+DELL023,Dell,Inspiron 17 5767,Intel Core i7,7th Gen,16GB,1TB HDD,Used,450000
+DELL024,Dell,Latitude 7280,Intel Core i5,7th Gen,8GB,128GB SSD,Used,185000
+DELL025,Dell,Latitude 5400,Intel Core i5,8th Gen,8GB,256GB SSD,Used,295000
+DELL026,Dell,Inspiron 5559,Intel Core i5,6th Gen,8GB,1TB HDD,Used,270000
+DELL027,Dell,Latitude 7400,Intel Core i5,8th Gen,16GB,256GB SSD,Used,430000
+DELL028,Dell,Latitude 5410,Intel Core i7,10th Gen,8GB,256GB SSD,Used,345000
+DELL029,Dell,Latitude E6320,Intel Core i5,2nd Gen,8GB,500GB HDD,Used,150000
+DELL030,Dell,Latitude 7490,Intel Core i7,8th Gen,8GB,256GB SSD,Used,270000
+DELL031,Dell,Latitude 5320,Intel Core i5,11th Gen,16GB,256GB SSD,Used,380000
+DELL032,Dell,Inspiron 13 7347,Intel Core i5,4th Gen,8GB,256GB SSD,Used,260000
+DELL033,Dell,Latitude 5400,Intel Core i5,8th Gen,8GB,256GB SSD,Used,260000
+DELL034,Dell,Latitude 5410,Intel Core i5,10th Gen,16GB,256GB SSD,Used,390000
+DELL035,Dell,Inspiron 15 5566,Intel Core i5-7200U,7th Gen,8GB,256GB SSD,Used,205000
+DELL036,Dell,Latitude 5490,Intel Core i5,8th Gen,8GB,256GB SSD,Used,275000
+DELL037,Dell,Latitude 5400,Intel Core i5,8th Gen,8GB,256GB SSD,Used,280000
+DELL038,Dell,Latitude 7410,Intel Core i5,10th Gen,8GB,256GB SSD,Used,350000
+DELL039,Dell,Latitude 5410,Intel Core i5,10th Gen,8GB,512GB SSD,Used,420000
+DELL040,Dell,Inspiron 15 3567,Intel Core i3,7th Gen,8GB,128GB SSD,Used,160000
+DELL041,Dell,Latitude E5430,Intel Core i5,3rd Gen,4GB,320GB HDD,Used,200000
+DELL042,Dell,Latitude 5400,Intel Core i7,8th Gen,16GB,256GB SSD,Used,340000
+DELL043,Dell,Latitude 7490,Intel Core i5,8th Gen,8GB,256GB SSD,Used,290000
+DELL044,Dell,Latitude 3310 2-in-1,Intel Core i5,8th Gen,16GB,256GB SSD,Used,375000
+DELL045,Dell,Latitude 5410,Intel Core i5,10th Gen,8GB,256GB SSD,Used,300000
+DELL046,Dell,Inspiron 7577,Intel Core i7,7th Gen,16GB,256GB SSD,Used,800000
+DELL047,Dell,Latitude E7270,Intel Core i5,6th Gen,8GB,128GB SSD,Used,175000
+DELL048,Dell,Latitude 5400,Intel Core i5,8th Gen,8GB,256GB SSD,Used,270000
+DELL049,Dell,Inspiron 14 3000,Intel Core i5,7th Gen,8GB,500GB HDD,Used,170000
+DELL050,Dell,Latitude 7400,Intel Core i5,8th Gen,16GB,256GB SSD,Used,430000
+LEN001,Lenovo,ThinkPad T480s,Intel Core i7,8th Gen,8GB,256GB SSD,Used,300000
+LEN002,Lenovo,IdeaPad 320,Intel Core i5,2nd Gen,8GB,250GB HDD,Used,80000
+LEN003,Lenovo,ThinkPad P1 Gen 4,Intel Core i7,11th Gen,32GB,500GB SSD,Used,1584000
+LEN004,Lenovo,Yoga 370,Intel Core i7,7th Gen,8GB,256GB SSD,Used,330000
+LEN005,Lenovo,ThinkPad T470,Intel Core i5,6th Gen,8GB,500GB HDD,Used,200000
+LEN006,Lenovo,IdeaPad 500S,Intel Core i7,10th Gen,8GB,512GB SSD,Used,600000
+LEN007,Lenovo,ThinkPad X131e,Intel Core i3,2nd Gen,8GB,320GB HDD,Used,70000
+LEN008,Lenovo,ThinkPad T14 Gen 1,Intel Core i5,10th Gen,16GB,512GB SSD,Used,400000
+LEN009,Lenovo,Yoga 11e,Intel Celeron,Brasswell,4GB,128GB SSD,Used,85000
+LEN010,Lenovo,ThinkPad T460,Intel Core i5,6th Gen,8GB,256GB SSD,Used,210000
+LEN011,Lenovo,IdeaPad S145-15,Intel Core i3,11th Gen,8GB,256GB SSD,Used,245000
+LEN012,Lenovo,ThinkPad P51,Intel Core i7,7th Gen,16GB,512GB SSD,Used,480000
+LEN013,Lenovo,ThinkPad X260,Intel Core i5,6th Gen,8GB,256GB SSD,Used,200000
+LEN014,Lenovo,Yoga 520,Intel Core i5,7th Gen,16GB,128GB SSD,Used,300000
+LEN015,Lenovo,ThinkPad T430,Intel Core i5,3rd Gen,6GB,320GB HDD,Used,110000
+LEN016,Lenovo,ThinkPad X1 Carbon,Intel Core i7,5th Gen,8GB,256GB SSD,Used,250000
+LEN017,Lenovo,IdeaPad 310,Intel Core i5,6th Gen,8GB,500GB HDD,Used,140000
+LEN018,Lenovo,ThinkPad T14 Gen 2,Intel Core i5,11th Gen,8GB,256GB SSD,Used,330000
+LEN019,Lenovo,ThinkPad P15,Intel Core i7,10th Gen,64GB,512GB SSD,Used,1287000
+LEN020,Lenovo,ThinkPad Yoga 260,Intel Core i3,6th Gen,8GB,256GB SSD,Used,300000
+LEN021,Lenovo,IdeaPad 110,Intel Core i5,6th Gen,8GB,500GB HDD,Used,210000
+LEN022,Lenovo,ThinkPad X220,Intel Core i5,2nd Gen,4GB,320GB HDD,Used,80000
+LEN023,Lenovo,ThinkPad T490s,Intel Core i7,8th Gen,16GB,512GB SSD,Used,350000
+LEN024,Lenovo,ThinkPad P51s,Intel Core i7,7th Gen,16GB,256GB SSD,Refurbished,380000
+LEN025,Lenovo,IdeaPad V330,Intel Core i3,7th Gen,8GB,128GB SSD,Used,170000
+LEN026,Lenovo,ThinkPad X1 Yoga,Intel Core i7,11th Gen,16GB,512GB SSD,Used,792000
+LEN027,Lenovo,ThinkPad E570,Intel Core i5,6th Gen,8GB,256GB SSD,Used,190000
+LEN028,Lenovo,Yoga 720,Intel Core i7,7th Gen,8GB,256GB SSD,Used,400000
+LEN029,Lenovo,ThinkPad X1 Carbon,Intel Core i5,4th Gen,8GB,256GB SSD,Used,150000
+LEN030,Lenovo,IdeaPad 300,Intel Pentium,Brasswell,8GB,128GB SSD,Used,200000
+LEN031,Lenovo,ThinkPad T15 Gen 1,Intel Core i7,10th Gen,8GB,256GB SSD,Used,290000
+LEN032,Lenovo,ThinkPad Yoga 460,Intel Core i5,6th Gen,8GB,256GB SSD,Used,330000
+LEN033,Lenovo,ThinkPad T430s,Intel Core i5,3rd Gen,8GB,320GB HDD,Used,100000
+LEN034,Lenovo,IdeaPad U510,Intel Core i5,6th Gen,12GB,1TB HDD,Used,340000
+LEN035,Lenovo,ThinkPad X13 Yoga Gen 3,Intel Core i7,12th Gen,32GB,256GB SSD,Used,650000
+LEN036,Lenovo,ThinkPad 13,Intel Celeron,Brasswell,4GB,128GB SSD,Used,100000
+LEN037,Lenovo,ThinkPad X1,Intel Core i7,12th Gen,16GB,512GB SSD,Used,500000
+LEN038,Lenovo,IdeaPad 330S-15ARR,Intel Pentium,Brasswell,8GB,256GB HDD,Used,210000
+LEN039,Lenovo,ThinkPad T460s,Intel Core i7,6th Gen,8GB,256GB SSD,Used,230000
+LEN040,Lenovo,Yoga 11e,Intel Celeron,Brasswell,4GB,128GB SSD,Used,160000
+LEN041,Lenovo,ThinkPad P15,Intel Core i7,10th Gen,32GB,512GB SSD,Used,1050000
+LEN042,Lenovo,ThinkPad T470,Intel Core i5,7th Gen,8GB,256GB SSD,Used,220000
+LEN043,Lenovo,IdeaPad 80WK,Intel Core i7,7th Gen,16GB,512GB SSD,Used,650000
+LEN044,Lenovo,ThinkPad X1 Carbon,Intel Core i7,3rd Gen,8GB,128GB SSD,Used,160000
+LEN045,Lenovo,ThinkPad Yoga 370,Intel Core i5,7th Gen,8GB,256GB SSD,Used,300000
+LEN046,Lenovo,IdeaPad 80T7,Intel Celeron,Brasswell,4GB,250GB HDD,Used,90000
+LEN047,Lenovo,ThinkPad X260,Intel Core i5,6th Gen,8GB,320GB HDD,Used,150000
+LEN048,Lenovo,ThinkPad L390 Yoga,Intel Core i5,8th Gen,16GB,256GB SSD,Used,294000
+LEN049,Lenovo,ThinkPad P15,Intel Core i7,10th Gen,32GB,512GB SSD,Used,1050000
+LEN050,Lenovo,ThinkPad X1 Yoga,Intel Core i7,8th Gen,8GB,256GB SSD,Used,350000
+APP001,Apple,MacBook Pro 2019,Intel Core i5,8th Gen,8GB,512GB SSD,Used,595000
+APP002,Apple,MacBook Air 2020,Apple M1,M1,8GB,256GB SSD,Used,640000
+APP003,Apple,MacBook Pro 2015,Intel Core i7,5th Gen,16GB,256GB SSD,Refurbished,400000
+APP004,Apple,MacBook Air 2022,Apple M2,M2,8GB,256GB SSD,Used,1030000
+APP005,Apple,MacBook Pro 2018,Intel Core i7,8th Gen,16GB,512GB SSD,Used,850000
+APP006,Apple,MacBook Air 2020,Apple M1,M1,16GB,256GB SSD,Used,780000
+APP007,Apple,MacBook Pro 2015,Intel Core i5,5th Gen,8GB,256GB SSD,Used,250000
+APP008,Apple,MacBook Pro 2021,Apple M1 Pro,M1 Pro,16GB,512GB SSD,Used,1250000
+APP009,Apple,MacBook Air 2020,Intel Core i5,10th Gen,8GB,512GB SSD,Used,410000
+APP010,Apple,MacBook Pro 2017,Intel Core i7,7th Gen,16GB,512GB SSD,Used,600000
+APP011,Apple,MacBook Air 2022,Apple M2,M2,16GB,512GB SSD,Used,1200000
+APP012,Apple,MacBook Pro 2019,Intel Core i9,9th Gen,16GB,1TB SSD,Used,750000
+APP013,Apple,MacBook Air 2020,Apple M1,M1,8GB,256GB SSD,Used,630000
+APP014,Apple,MacBook Pro 2018,Intel Core i5,8th Gen,16GB,512GB SSD,Used,600000
+APP015,Apple,MacBook Pro 2015,Intel Core i7,5th Gen,16GB,512GB SSD,Used,480000
+APP016,Apple,MacBook Pro 2021,Apple M1 Pro,M1 Pro,16GB,1TB SSD,Used,1350000
+APP017,Apple,MacBook Air 2020,Apple M1,M1,8GB,256GB SSD,Used,650000
+APP018,Apple,MacBook Pro 2017,Intel Core i5,7th Gen,16GB,512GB SSD,Used,430000
+APP019,Apple,MacBook Pro 2019,Intel Core i7,9th Gen,16GB,1TB SSD,Used,700000
+APP020,Apple,MacBook Air 2022,Apple M2,M2,8GB,256GB SSD,Used,900000
+APP021,Apple,MacBook Pro 2015,Intel Core i5,5th Gen,8GB,128GB SSD,Used,360000
+APP022,Apple,MacBook Pro 2018,Intel Core i7,8th Gen,32GB,512GB SSD,Used,830000
+APP023,Apple,MacBook Air 2020,Apple M1,M1,16GB,512GB SSD,Used,980000
+APP024,Apple,MacBook Pro 2016,Intel Core i7,6th Gen,16GB,512GB SSD,Used,615000
+APP025,Apple,MacBook Pro 2021,Apple M1 Pro,M1 Pro,16GB,512GB SSD,Used,1200000
+APP026,Apple,MacBook Air 2020,Apple M1,M1,8GB,256GB SSD,Used,584999
+APP027,Apple,MacBook Pro 2015,Intel Core i5,5th Gen,8GB,256GB SSD,Used,300000
+APP028,Apple,MacBook Pro 2018,Intel Core i9,8th Gen,16GB,512GB SSD,Used,880000
+APP029,Apple,MacBook Air 2022,Apple M2,M2,8GB,256GB SSD,Used,700000
+APP030,Apple,MacBook Pro 2019,Intel Core i9,9th Gen,32GB,1TB SSD,Used,900000
+APP031,Apple,MacBook Air 2020,Apple M1,M1,8GB,256GB SSD,Used,700000
+APP032,Apple,MacBook Pro 2015,Intel Core i7,5th Gen,16GB,512GB SSD,Refurbished,350000
+APP033,Apple,MacBook Pro 2018,Intel Core i5,8th Gen,8GB,256GB SSD,Used,550000
+APP034,Apple,MacBook Pro 2021,Apple M1 Pro,M1 Pro,32GB,1TB SSD,Used,1450000
+APP035,Apple,MacBook Air 2020,Apple M1,M1,8GB,256GB SSD,Used,680000
+APP036,Apple,MacBook Pro 2014,Intel Core i5,4th Gen,8GB,256GB SSD,Used,285000
+APP037,Apple,MacBook Pro 2019,Intel Core i7,9th Gen,16GB,512GB SSD,Used,650000
+APP038,Apple,MacBook Air 2022,Apple M2,M2,8GB,256GB SSD,Used,780000
+APP039,Apple,MacBook Pro 2017,Intel Core i7,7th Gen,16GB,1TB SSD,Used,675000
+APP040,Apple,MacBook Air 2020,Apple M1,M1,16GB,256GB SSD,Used,740000
+APP041,Apple,MacBook Pro 2015,Intel Core i5,5th Gen,8GB,512GB SSD,Used,380000
+APP042,Apple,MacBook Pro 2018,Intel Core i7,8th Gen,16GB,512GB SSD,Used,650000
+APP043,Apple,MacBook Air 2022,Apple M2,M2,8GB,256GB SSD,Used,830000
+APP044,Apple,MacBook Pro 2019,Intel Core i9,9th Gen,32GB,1TB SSD,Used,800000
+APP045,Apple,MacBook Air 2020,Apple M1,M1,8GB,256GB SSD,Used,550000
+APP046,Apple,MacBook Pro 2015,Intel Core i5,5th Gen,8GB,256GB SSD,Used,290000
+APP047,Apple,MacBook Pro 2017,Intel Core i7,7th Gen,16GB,512GB SSD,Used,550000
+APP048,Apple,MacBook Air 2022,Apple M2,M2,16GB,256GB SSD,Used,1150000
+APP049,Apple,MacBook Pro 2019,Intel Core i9,9th Gen,64GB,512GB SSD,Used,970000
+APP050,Apple,MacBook Air 2020,Apple M1,M1,8GB,256GB SSD,Used,670000
+ASUS001,ASUS,VivoBook Max X541UA,Intel Core i5,6th Gen,8GB,256GB SSD,Used,165000
+ASUS002,ASUS,ZenBook UX32A,Intel Core i7,6th Gen,12GB,256GB SSD,Used,150000
+ASUS003,ASUS,VivoBook 15,Intel Core i5,11th Gen,8GB,256GB SSD,Used,300000
+ASUS004,ASUS,TUF Gaming A15,Intel Core i5,8th Gen,8GB,256GB SSD,Used,425000
+ASUS005,ASUS,TUF Gaming FX504,Intel Core i5,10th Gen,8GB,256GB SSD,Used,860000
+ASUS006,ASUS,TUF Gaming FX504GM,Intel Core i5,8th Gen,16GB,512GB SSD,Used,900000
+ASUS007,ASUS,TUF Dash F15 FX506HF,Intel Core i5,11th Gen,16GB,512GB SSD,Used,935000
+ASUS008,ASUS,TUF Gaming A15,AMD Ryzen 5,11th Gen,16GB,512GB SSD,Refurbished,1000000
+ASUS009,ASUS,ZenBook UX303LA,Intel Core i5,6th Gen,8GB,128GB SSD,Used,159000
+ASUS010,ASUS,ZenBook UX303UB,Intel Core i7,6th Gen,12GB,256GB SSD,Used,300000
+ASUS011,ASUS,ROG Zephyrus G14 GA401QM,AMD Ryzen 9,11th Gen,16GB,1TB SSD,Used,1450000
+ASUS012,ASUS,VivoBook S15 S510UA,Intel Core i5,7th Gen,8GB,128GB SSD,Used,255000
+ASUS013,ASUS,VivoBook Flip 14 TP412UA,Intel Core i5,8th Gen,8GB,256GB SSD,Used,400000
+ASUS014,ASUS,ZenBook UX31A,Intel Core i7,4th Gen,4GB,128GB SSD,Used,150000
+ASUS015,ASUS,ZenBook Pro UX501,Intel Core i7,11th Gen,8GB,512GB SSD,Used,600000
+ASUS016,ASUS,ZenBook S UX391UA,AMD Ryzen 5,10th Gen,8GB,256GB SSD,Used,590000
+ASUS017,ASUS,ZenBook 14 UX434,Intel Core i7,10th Gen,32GB,256GB SSD,Used,380000
+ASUS018,ASUS,ZenBook 14,Intel Core i7-1175G7,11th Gen,16GB,512GB SSD,Used,1000000
+ASUS019,ASUS,VivoBook 15 X510UQ,Intel Core i7,7th Gen,8GB,256GB SSD,Used,350000
+ASUS020,ASUS,VivoBook X412,Intel Core i7,11th Gen,8GB,256GB SSD,Used,350000
+ASUS021,ASUS,VivoBook X515JA,Intel Core i5,10th Gen,8GB,128GB SSD,Used,220000
+ASUS022,ASUS,VivoBook 15,AMD Ryzen 7,11th Gen,8GB,256GB SSD,Used,300000
+ASUS023,ASUS,Q552UB,Intel Core i7,6th Gen,8GB,256GB SSD,Used,300000
+ASUS024,ASUS,ROG G752VT,Intel Core i7,6th Gen,16GB,640GB HDD + SSD,Used,430000
+ASUS025,ASUS,ROG GL551J,Intel Core i7,6th Gen,8GB,256GB SSD,Used,390000
+ACER001,Acer,Aspire V3-574,Intel Core i7,5th Gen,8GB,1TB HDD,Used,230000
+ACER002,Acer,TravelMate P2,Intel Core i5,7th Gen,8GB,256GB SSD,Used,200000
+ACER003,Acer,Aspire V5-471,Intel Core i5,4th Gen,8GB,500GB HDD,Used,150000
+ACER004,Acer,Swift 3 SF314-42,AMD Ryzen 5 4500U,10th Gen,16GB,512GB SSD,Used,350000
+ACER005,Acer,Aspire E5-531,Intel Core i7,5th Gen,8GB,500GB HDD,Used,150000
+ACER006,Acer,Aspire 3 A315-53,Intel Core i5,7th Gen,8GB,256GB SSD,Used,200000
+ACER007,Acer,Nitro 5 AN515-52,Intel Core i5-8300H,8th Gen,16GB,512GB HDD + SSD,Used,580000
+ACER008,Acer,TravelMate P255 M,Intel Core i5,7th Gen,8GB,500GB HDD,Used,160000
+ACER009,Acer,Aspire V3-572G,Intel Core i7,4th Gen,8GB,250GB HDD,Used,170000
+ACER010,Acer,Aspire E5-432,Intel Pentium,Brasswell,4GB,128GB SSD,Used,120000
+ACER011,Acer,Swift 3 SF314-52,Intel Core i5-8350U,8th Gen,8GB,256GB SSD,Used,300000
+ACER012,Acer,Aspire E15 E5-575G,Intel Core i5,7th Gen,8GB,256GB SSD,Used,300000
+ACER013,Acer,Aspire 4749Z,Intel Core i3,4th Gen,4GB,160GB HDD,Used,120000
+ACER014,Acer,Aspire E1-771,Intel Core i5,7th Gen,8GB,256GB SSD,Used,205000
+ACER015,Acer,Aspire A515-51,Intel Core i5,7th Gen,8GB,128GB SSD,Used,170000
+ACER016,Acer,Swift 5 SF315-52,Intel Core i5-8250U,8th Gen,8GB,256GB SSD,Used,255000
+ACER017,Acer,Aspire V5,Intel Core i5,4th Gen,8GB,500GB HDD,Used,165000
+ACER018,Acer,Aspire E17,Intel Core i5,4th Gen,8GB,500GB HDD,Used,139000
+ACER019,Acer,Aspire V3-574G,Intel Core i7,5th Gen,8GB,320GB HDD,Used,220000
+ACER020,Acer,Swift 3,Intel Core i5,10th Gen,8GB,256GB SSD,Used,400000
+ACER021,Acer,Aspire ES1-531,Intel Pentium,Brasswell,4GB,320GB HDD,Used,100000
+ACER022,Acer,Aspire E5-575,Intel Core i7,7th Gen,8GB,256GB SSD,Used,235000
+ACER023,Acer,Aspire V5-591G,Intel Core i5,6th Gen,8GB,256GB SSD,Used,280000
+ACER024,Acer,Swift 3,Intel Core i7,7th Gen,8GB,1TB HDD,Used,250000
+ACER025,Acer,TravelMate P255 M,Intel Core i3,6th Gen,8GB,320GB HDD,Used,130000
+ACER026,Acer,Aspire A515-52G,Intel Core i5,8th Gen,8GB,256GB SSD,Used,280000
+ACER027,Acer,Aspire R3-431T,Intel Celeron,Brasswell,4GB,160GB HDD,Used,110000
+ACER028,Acer,Aspire A315-56,Intel Core i5,10th Gen,8GB,1TB HDD,Used,250000
+ACER029,Acer,Aspire E15,Intel Pentium,Brasswell,8GB,250GB HDD,Used,120000
+ACER030,Acer,Aspire A315-56,Intel Core i7,10th Gen,8GB,1TB HDD,Used,350000
+ACER031,Acer,Nitro 5 AN515-57,Intel Core i5-11400H,11th Gen,8GB,512GB SSD,Used,700000
+ACER032,Acer,Nitro 5 AN515-58,Intel Core i5-12450H,12th Gen,16GB,512GB SSD,Used,950000
+ACER033,Acer,Aspire VN7-571G,Intel Core i7-4720HQ,4th Gen,16GB,256GB SSD,Used,280000
+ACER034,Acer,TravelMate P259,Intel Core i5,7th Gen,8GB,256GB SSD,Used,210000
+ACER035,Acer,Predator Helios 300 PH315-55,Intel Core i7-12700H,12th Gen,16GB,512GB SSD,Used,1150000
+MSI001,MSI,GF63 Thin 10SCXR,Intel Core i7-10750H,10th Gen,16GB,512GB SSD,Used,740000
+MSI002,MSI,GE72MVR 7RG Apache Pro,Intel Core i7-7700H,7th Gen,16GB,128GB SSD + 1TB HDD,Used,740000
+MSI003,MSI,GF63 Thin 9SCX,Intel Core i5-9300H,9th Gen,16GB,256GB SSD,Used,720000
+MSI004,MSI,GS66 Stealth 12UHS,Intel Core i9,12th Gen,24GB,1TB SSD,Used,1500000
+MSI005,MSI,GF62 8RC,Intel Core i5,8th Gen,16GB,512GB SSD + 500GB HDD,Used,460000
+MSI006,MSI,GP66 Leopard 10UG,Intel Core i7-10750H,10th Gen,16GB,1TB SSD,Used,1550000
+MSI007,MSI,Sword 15,Intel Core i7,11th Gen,16GB,512GB SSD,Used,1050000
+MSI008,MSI,GS66 Stealth 10SGS,Intel Core i7-10750H,10th Gen,16GB,512GB SSD,Used,1150000
+MSI009,MSI,GF63 Thin,Intel Core i5-11400H,11th Gen,16GB,512GB SSD,Used,1100000
+MSI010,MSI,GE66 Raider,Intel Core i9-12900H,12th Gen,16GB,1TB SSD,Used,1780000
+MSI011,MSI,GS66 Stealth 10SGS,Intel Core i7,10th Gen,32GB,512GB SSD,Used,1600000
+MSI012,MSI,Stealth 14 Studio A13VF,Intel Core i7,13th Gen,16GB,1TB SSD,Used,1500000
+MSI013,MSI,GF63 Thin 9SC,Intel Core i7,9th Gen,16GB,512GB SSD,Used,600000
+MSI014,MSI,Pulse GL66,Intel Core i7-13700H,13th Gen,16GB,1TB SSD,Used,1500000
+MSI015,MSI,GS66 Stealth 10SGS,Intel Core i9-11900H,11th Gen,32GB,1TB SSD,Used,2200000
+MSI016,MSI,GF63 Thin,Intel Core i5-10500H,10th Gen,8GB,512GB SSD,Used,950000
+MSI017,MSI,GE62 Apache Pro,Intel Core i7-6700HQ,6th Gen,8GB,256GB SSD,Used,400000
+MSI018,MSI,GS66 Stealth 11UH,Intel Core i7-11800H,11th Gen,32GB,1TB SSD,Used,2000000
+MSI019,MSI,GF63 Thin 12VE,Intel Core i5-12450H,12th Gen,16GB,512GB SSD,Used,1190000
+MSI020,MSI,GS63 Stealth 8RE,Intel Core i7-8750H,8th Gen,32GB,256GB SSD + 1TB HDD,Used,910000
+MSI021,MSI,GE66 Raider,Intel Core i7-12700H,12th Gen,16GB,1TB SSD,Used,1900000
+MSI022,MSI,Katana 17,Intel Core i7-13620H,13th Gen,16GB,512GB SSD,Used,1750000
+MSI023,MSI,GS63 Stealth 8RE,Intel Core i7-9750H,9th Gen,16GB,512GB SSD,Used,1290000
+MSI024,MSI,Katana 17,Intel Core i7,13th Gen,16GB,1TB SSD,Used,1800000
+MSI025,MSI,GS66 Stealth 10SGS,Intel Core i7-10750H,10th Gen,32GB,512GB SSD,Used,1250000
+TOSH001,Toshiba,Satellite C50,Intel Core i5,4th Gen,8GB,500GB HDD,Used,130000
+TOSH002,Toshiba,Satellite E45T,Intel Core i3,5th Gen,8GB,256GB HDD,Used,170000
+TOSH003,Toshiba,Satellite C50,Intel Core i3,4th Gen,8GB,320GB HDD,Used,100000
+TOSH004,Toshiba,Portege X20W,Intel Core i5,7th Gen,8GB,256GB SSD,Used,260000
+TOSH005,Toshiba,Satellite C655,Intel Celeron,Brasswell,4GB,160GB HDD,Used,50000
+TOSH006,Toshiba,Portege X30,Intel Core i5,11th Gen,8GB,256GB SSD,Used,390000
+TOSH007,Toshiba,Satellite L70,Intel Core i5,5th Gen,8GB,1TB HDD,Used,210000
+TOSH008,Toshiba,Satellite,Intel Pentium,Brasswell,8GB,320GB HDD,Used,120000
+TOSH009,Toshiba,Satellite L755,Intel Core i5,10th Gen,8GB,160GB HDD,Used,90000
+TOSH010,Toshiba,Dynabook Satellite Pro A40-J,Intel Core i5,10th Gen,8GB,256GB SSD,Used,250000
+TOSH011,Toshiba,Satellite L40,Intel Core i5,10th Gen,8GB,256GB SSD,Used,240000
+TOSH012,Toshiba,Satellite C855,Intel Core i5,4th Gen,8GB,250GB HDD,Used,100000
+TOSH013,Toshiba,Dynabook Satellite Pro C40,Intel Core i5,10th Gen,8GB,256GB SSD,Used,220000
+TOSH014,Toshiba,Satellite P55W-C,Intel Core i5-5200U,5th Gen,8GB,256GB SSD,Used,250000
+TOSH015,Toshiba,Portege Z30,Intel Core i5,4th Gen,8GB,128GB SSD,Used,170000
