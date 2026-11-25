@@ -1,32 +1,43 @@
-
 import pandas as pd
 import os
+import re
 
+
+# Load dataset
 file_path = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "..", "dataset", "Used_laptop_dataset (1).csv")
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "dataset",
+        "Used_laptop_dataset (1).csv"
+    )
 )
 
 df = pd.read_csv(file_path)
 
-# Convert RAM values into numbers
+print("Dataset loaded successfully!")
+
+
+# ==========================================
+# 1. RAM CONVERSION
+# ==========================================
+
 df["RAM_GB"] = df["RAM"].str.extract(r"(\d+)").astype(int)
 
-print("Original RAM values:")
-print(df["RAM"].unique())
-
-print("\nConverted RAM values:")
-print(df[["RAM", "RAM_GB"]].head(10))
+print("\nRAM conversion:")
+print(df[["RAM", "RAM_GB"]].drop_duplicates())
 
 
-
-import re
+# ==========================================
+# 2. STORAGE CONVERSION
+# ==========================================
 
 def convert_storage(storage):
     storage = storage.upper()
 
     # Extract HDD and SSD capacities
-    hdd_values = re.findall(r'(\d+)\s*(TB|GB)\s*HDD', storage)
-    ssd_values = re.findall(r'(\d+)\s*(TB|GB)\s*SSD', storage)
+    hdd_values = re.findall(r"(\d+)\s*(TB|GB)\s*HDD", storage)
+    ssd_values = re.findall(r"(\d+)\s*(TB|GB)\s*SSD", storage)
 
     hdd_gb = sum(
         int(value) * (1024 if unit == "TB" else 1)
@@ -40,7 +51,8 @@ def convert_storage(storage):
 
     # Handle eMMC storage
     if "EMMC" in storage:
-        emmc_values = re.findall(r'(\d+)\s*(TB|GB)', storage)
+        emmc_values = re.findall(r"(\d+)\s*(TB|GB)", storage)
+
         for value, unit in emmc_values:
             ssd_gb += int(value) * (1024 if unit == "TB" else 1)
 
@@ -50,7 +62,12 @@ def convert_storage(storage):
 df[["HDD_GB", "SSD_GB"]] = df["Storage"].apply(convert_storage)
 
 print("\nStorage conversion:")
-print(df[["Storage", "HDD_GB", "SSD_GB"]].head(20))
+print(df[["Storage", "HDD_GB", "SSD_GB"]].drop_duplicates())
+
+
+# ==========================================
+# 3. PROCESSOR STANDARDISATION
+# ==========================================
 
 def standardise_processor(processor):
     processor = processor.strip()
@@ -92,7 +109,11 @@ df["Processor_Family"] = df["Processor"].apply(standardise_processor)
 print("\nStandardised processor categories:")
 print(df[["Processor", "Processor_Family"]].drop_duplicates())
 
-# Standardise laptop generations
+
+# ==========================================
+# 4. GENERATION STANDARDISATION
+# ==========================================
+
 def standardise_generation(generation):
     generation = generation.strip()
 
@@ -104,7 +125,7 @@ def standardise_generation(generation):
 
 df["Generation_Category"] = df["Generation"].apply(standardise_generation)
 
-# Extract Intel generation numbers
+# Extract Intel generation numbers only
 df["Generation_Number"] = (
     df["Generation_Category"]
     .where(df["Generation_Category"].str.contains("Gen", case=False))
@@ -113,19 +134,125 @@ df["Generation_Number"] = (
 )
 
 print("\nStandardised generations:")
-print(df[["Generation", "Generation_Category", "Generation_Number"]].drop_duplicates())
+print(
+    df[
+        ["Generation", "Generation_Category", "Generation_Number"]
+    ].drop_duplicates()
+)
 
 
-print("\nProcessor values:")
-print(df["Processor"].unique())
-print("\nNumber of unique laptop models:")
+# ==========================================
+# 5. LAPTOP MODEL FAMILY STANDARDISATION
+# ==========================================
 
-print(df["Model"].nunique())
+def standardise_model(row):
+    brand = row["Brand"].lower()
+    model = row["Model"].lower()
 
-print("\nSample laptop models:")
-print(df["Model"].unique()[:30])
-print("\nLaptop models grouped by brand:")
+    if brand == "hp":
+        families = {
+            "elitebook": "EliteBook",
+            "chromebook": "Chromebook",
+            "probook": "ProBook",
+            "zbook": "ZBook",
+            "pavilion": "Pavilion",
+            "omen": "Omen",
+            "envy": "Envy",
+            "spectre": "Spectre"
+        }
 
-for brand in df["Brand"].unique():
-    print(f"\n{brand}:")
-    print(df[df["Brand"] == brand]["Model"].unique())
+    elif brand == "dell":
+        families = {
+            "latitude": "Latitude",
+            "inspiron": "Inspiron"
+        }
+
+    elif brand == "lenovo":
+        families = {
+            "thinkpad": "ThinkPad",
+            "ideapad": "IdeaPad",
+            "yoga": "Yoga"
+        }
+
+    elif brand == "apple":
+        families = {
+            "macbook pro": "MacBook Pro",
+            "macbook air": "MacBook Air"
+        }
+
+    elif brand == "asus":
+        families = {
+            "vivobook": "VivoBook",
+            "zenbook": "ZenBook",
+            "tuf": "TUF Gaming",
+            "rog": "ROG"
+        }
+
+    elif brand == "acer":
+        families = {
+            "aspire": "Aspire",
+            "travelmate": "TravelMate",
+            "swift": "Swift",
+            "nitro": "Nitro",
+            "predator": "Predator"
+        }
+
+    elif brand == "msi":
+        families = {
+            "gf": "MSI Gaming",
+            "ge": "MSI Gaming",
+            "gs": "MSI Gaming",
+            "gp": "MSI Gaming",
+            "sword": "Sword",
+            "stealth": "Stealth",
+            "pulse": "Pulse",
+            "katana": "Katana"
+        }
+
+    elif brand == "toshiba":
+        families = {
+            "satellite": "Satellite",
+            "portege": "Portege",
+            "dynabook satellite": "Satellite"
+        }
+
+    else:
+        families = {}
+
+    for prefix, family in families.items():
+        if model.startswith(prefix):
+            return family
+
+    return "Other"
+
+
+df["Model_Family"] = df.apply(standardise_model, axis=1)
+
+print("\nStandardised laptop model families:")
+print(
+    df[["Brand", "Model", "Model_Family"]].drop_duplicates()
+)
+
+print("\nModel family counts:")
+print(df["Model_Family"].value_counts())
+
+
+# ==========================================
+# 6. DATASET SUMMARY
+# ==========================================
+
+print("\nFinal dataset shape:")
+print(df.shape)
+
+print("\nNew feature columns:")
+print([
+    "RAM_GB",
+    "HDD_GB",
+    "SSD_GB",
+    "Processor_Family",
+    "Generation_Category",
+    "Generation_Number",
+    "Model_Family"
+])
+
+print("\nFeature engineering completed successfully!")
