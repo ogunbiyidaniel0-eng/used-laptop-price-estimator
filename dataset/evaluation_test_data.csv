@@ -1,0 +1,60 @@
+Brand,Processor_Family,Generation_Category,Generation_Number,RAM_GB,HDD_GB,SSD_GB,Condition,Model_Family,Price (NGN)
+MSI,Intel Core i5,12th Gen,12.0,16,0.0,512.0,Used,MSI Gaming,1190000
+Apple,Apple M2,M2,,16,0.0,512.0,Used,MacBook Air,1200000
+Dell,Intel Core i5,10th Gen,10.0,8,0.0,256.0,Used,Latitude,350000
+Dell,Intel Core i5,8th Gen,8.0,8,0.0,256.0,Used,Latitude,275000
+MSI,Intel Core i7,11th Gen,11.0,16,0.0,512.0,Used,Sword,1050000
+HP,Intel Core i7,4th Gen,4.0,32,0.0,512.0,Used,ZBook,350000
+HP,Intel Core i5,8th Gen,8.0,8,2048.0,256.0,Used,Omen,650000
+MSI,Intel Core i7,13th Gen,13.0,16,0.0,1024.0,Used,Katana,1800000
+Toshiba,Intel Core i3,5th Gen,5.0,8,256.0,0.0,Used,Satellite,170000
+Dell,Intel Core i7,7th Gen,7.0,16,0.0,256.0,Used,Inspiron,800000
+Apple,Apple M2,M2,,8,0.0,256.0,Used,MacBook Air,1030000
+ASUS,Intel Core i7,10th Gen,10.0,32,0.0,256.0,Used,ZenBook,380000
+Dell,Intel Core i5,10th Gen,10.0,8,0.0,256.0,Used,Latitude,320000
+ASUS,Intel Core i7,6th Gen,6.0,16,640.0,,Used,ROG,430000
+MSI,Intel Core i7,10th Gen,10.0,16,0.0,512.0,Used,MSI Gaming,1150000
+HP,Intel Core i7,6th Gen,6.0,16,0.0,512.0,Used,Envy,420000
+HP,Intel Core i7,7th Gen,7.0,8,0.0,256.0,Used,ZBook,320000
+Acer,Intel Core i5,4th Gen,4.0,8,500.0,0.0,Used,Aspire,165000
+Acer,Intel Core i7,4th Gen,4.0,8,250.0,0.0,Used,Aspire,170000
+Lenovo,Intel Core i7,12th Gen,12.0,16,0.0,512.0,Used,ThinkPad,500000
+Lenovo,Intel Core i5,8th Gen,8.0,16,0.0,256.0,Used,ThinkPad,294000
+Apple,Apple M1,M1,,16,0.0,512.0,Used,MacBook Air,980000
+Apple,Apple M1 Pro,M1 Pro,,16,0.0,512.0,Used,MacBook Pro,1250000
+Dell,Intel Core i5,6th Gen,6.0,8,0.0,128.0,Used,Latitude,175000
+Lenovo,Intel Core i5,11th Gen,11.0,8,0.0,256.0,Used,ThinkPad,330000
+HP,Intel Core i5,6th Gen,6.0,8,0.0,256.0,Used,EliteBook,330000
+Acer,Intel Core i7,5th Gen,5.0,8,320.0,0.0,Used,Aspire,220000
+Acer,Intel Core i5,12th Gen,12.0,16,0.0,512.0,Used,Nitro,950000
+Apple,Apple M1,M1,,8,0.0,256.0,Used,MacBook Air,584999
+Apple,Intel Core i7,8th Gen,8.0,16,0.0,512.0,Used,MacBook Pro,650000
+Apple,Intel Core i9,9th Gen,9.0,64,0.0,512.0,Used,MacBook Pro,970000
+HP,Intel Core i7,11th Gen,11.0,16,0.0,256.0,Used,ZBook,500000
+Acer,Intel Core i5,4th Gen,4.0,8,500.0,0.0,Used,Aspire,150000
+ASUS,AMD Ryzen 7,11th Gen,11.0,8,0.0,256.0,Used,VivoBook,300000
+ASUS,Intel Core i5,11th Gen,11.0,8,0.0,256.0,Used,VivoBook,300000
+Dell,Intel Core i5,8th Gen,8.0,16,0.0,256.0,Used,Latitude,430000
+Apple,Apple M2,M2,,8,0.0,256.0,Used,MacBook Air,780000
+Lenovo,Intel Core i7,7th Gen,7.0,16,0.0,256.0,Refurbished,ThinkPad,380000
+Toshiba,Intel Celeron,Braswell,,4,160.0,0.0,Used,Satellite,50000
+ASUS,AMD Ryzen 5,11th Gen,11.0,16,0.0,512.0,Refurbished,TUF Gaming,1000000
+ASUS,Intel Core i7,6th Gen,6.0,12,0.0,256.0,Used,ZenBook,300000
+Apple,Apple M1,M1,,8,0.0,256.0,Used,MacBook Air,680000
+Apple,Intel Core i5,8th Gen,8.0,8,0.0,256.0,Used,MacBook Pro,550000
+Lenovo,Intel Core i7,5th Gen,5.0,8,0.0,256.0,Used,ThinkPad,250000
+Dell,Intel Pentium,Braswell,,4,0.0,128.0,Used,Inspiron,150000
+Acer,Intel Core i5,8th Gen,8.0,16,512.0,,Used,Nitro,580000
+HP,Intel Core i5,8th Gen,8.0,8,0.0,512.0,Used,EliteBook,320000
+Dell,Intel Core i5,11th Gen,11.0,16,0.0,256.0,Used,Latitude,380000
+HP,Intel Core i7,10th Gen,10.0,16,0.0,512.0,Used,Omen,1180000
+Apple,Apple M1,M1,,8,0.0,256.0,Used,MacBook Air,700000
+Apple,Apple M2,M2,,8,0.0,256.0,Used,MacBook Air,900000
+Lenovo,Intel Core i5,7th Gen,7.0,8,0.0,256.0,Used,ThinkPad,300000
+HP,Intel Core i5,7th Gen,7.0,8,0.0,256.0,Used,EliteBook,600000
+HP,Intel Core i5,7th Gen,7.0,8,0.0,256.0,Used,ProBook,220000
+Acer,Intel Core i5,8th Gen,8.0,8,0.0,256.0,Used,Aspire,280000
+HP,Intel Core i7,7th Gen,7.0,8,0.0,256.0,Used,ZBook,220000
+Dell,Intel Core i3,10th Gen,10.0,8,0.0,256.0,Used,Latitude,260000
+Lenovo,Intel Core i7,8th Gen,8.0,8,0.0,256.0,Used,ThinkPad,350000
+Lenovo,Intel Core i5,4th Gen,4.0,8,0.0,256.0,Used,ThinkPad,150000

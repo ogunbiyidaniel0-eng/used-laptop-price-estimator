@@ -1,3 +1,4 @@
+
 import joblib
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
@@ -63,7 +64,28 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 
 # ==========================================
-# 4. DISPLAY DATASET INFORMATION
+# 4. SAVE TEST DATA FOR MODEL EVALUATION
+# ==========================================
+
+evaluation_data = X_test.copy()
+evaluation_data["Price (NGN)"] = y_test
+
+evaluation_path = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "dataset",
+        "evaluation_test_data.csv"
+    )
+)
+
+evaluation_data.to_csv(evaluation_path, index=False)
+
+print("\nEvaluation test data saved successfully!")
+
+
+# ==========================================
+# 5. DISPLAY DATASET INFORMATION
 # ==========================================
 
 print("\nDataset preparation completed!")
@@ -74,8 +96,9 @@ print("Testing data shape:", X_test.shape)
 print("\nTraining target shape:", y_train.shape)
 print("Testing target shape:", y_test.shape)
 
+
 # ==========================================
-# 5. BUILD PREPROCESSING PIPELINE
+# 6. BUILD PREPROCESSING PIPELINE
 # ==========================================
 
 categorical_features = [
@@ -111,8 +134,10 @@ preprocessor = ColumnTransformer(transformers=[
 ])
 
 print("\nPreprocessing pipeline created successfully!")
+
+
 # ==========================================
-# 6. INITIALISE MACHINE LEARNING ALGORITHMS
+# 7. INITIALISE MACHINE LEARNING ALGORITHMS
 # ==========================================
 
 models = {
@@ -135,8 +160,10 @@ print("\nMachine learning algorithms initialised successfully!")
 
 for model_name in models:
     print(model_name)
+
+
 # ==========================================
-# 7. TRAIN MACHINE LEARNING MODELS
+# 8. TRAIN MACHINE LEARNING MODELS
 # ==========================================
 
 trained_models = {}
@@ -158,8 +185,9 @@ for model_name, model in models.items():
 
 print("\nAll machine learning models have been trained!")
 
+
 # ==========================================
-# 8. SAVE TRAINED MODELS
+# 9. SAVE TRAINED MODELS
 # ==========================================
 
 models_path = os.path.abspath(
