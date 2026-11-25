@@ -1,3 +1,10 @@
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
+from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
 import pandas as pd
 import os
 from sklearn.model_selection import train_test_split
@@ -65,3 +72,87 @@ print("Testing data shape:", X_test.shape)
 
 print("\nTraining target shape:", y_train.shape)
 print("Testing target shape:", y_test.shape)
+
+# ==========================================
+# 5. BUILD PREPROCESSING PIPELINE
+# ==========================================
+
+categorical_features = [
+    "Brand",
+    "Processor_Family",
+    "Generation_Category",
+    "Condition",
+    "Model_Family"
+]
+
+numerical_features = [
+    "Generation_Number",
+    "RAM_GB",
+    "HDD_GB",
+    "SSD_GB"
+]
+
+# Handle missing numerical values
+numerical_transformer = Pipeline(steps=[
+    ("imputer", SimpleImputer(strategy="median"))
+])
+
+# Handle categorical values
+categorical_transformer = Pipeline(steps=[
+    ("imputer", SimpleImputer(strategy="most_frequent")),
+    ("encoder", OneHotEncoder(handle_unknown="ignore"))
+])
+
+# Combine both preprocessing steps
+preprocessor = ColumnTransformer(transformers=[
+    ("num", numerical_transformer, numerical_features),
+    ("cat", categorical_transformer, categorical_features)
+])
+
+print("\nPreprocessing pipeline created successfully!")
+# ==========================================
+# 6. INITIALISE MACHINE LEARNING ALGORITHMS
+# ==========================================
+
+models = {
+    "Linear Regression": LinearRegression(),
+
+    "Decision Tree": DecisionTreeRegressor(
+        max_depth=8,
+        random_state=42
+    ),
+
+    "Random Forest": RandomForestRegressor(
+        n_estimators=200,
+        max_depth=12,
+        min_samples_leaf=2,
+        random_state=42
+    )
+}
+
+print("\nMachine learning algorithms initialised successfully!")
+
+for model_name in models:
+    print(model_name)
+# ==========================================
+# 7. TRAIN MACHINE LEARNING MODELS
+# ==========================================
+
+trained_models = {}
+
+for model_name, model in models.items():
+
+    # Combine preprocessing and model
+    pipeline = Pipeline(steps=[
+        ("preprocessor", preprocessor),
+        ("model", model)
+    ])
+
+    # Train the model
+    pipeline.fit(X_train, y_train)
+
+    trained_models[model_name] = pipeline
+
+    print(f"{model_name} trained successfully!")
+
+print("\nAll machine learning models have been trained!")
