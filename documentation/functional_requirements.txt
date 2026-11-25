@@ -16,7 +16,7 @@ FR-5  Explore data
       The notebook shall show at least three charts (price by brand, price vs RAM, correlation heatmap), each with a one-sentence explanation.
 
 FR-6  Prepare features
-      The notebook shall select the input features (brand, CPU, RAM, storage, screen size, age) and encode categorical features as numbers.
+      The notebook shall select the input features (brand, CPU, RAM, storage,) and encode categorical features as numbers.
 
 FR-7  Split data
       The notebook shall split the data into 80% training and 20% testing with a fixed random seed (random_state=42).
