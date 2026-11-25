@@ -118,3 +118,14 @@ print(df[["Generation", "Generation_Category", "Generation_Number"]].drop_duplic
 
 print("\nProcessor values:")
 print(df["Processor"].unique())
+print("\nNumber of unique laptop models:")
+
+print(df["Model"].nunique())
+
+print("\nSample laptop models:")
+print(df["Model"].unique()[:30])
+print("\nLaptop models grouped by brand:")
+
+for brand in df["Brand"].unique():
+    print(f"\n{brand}:")
+    print(df[df["Brand"] == brand]["Model"].unique())
