@@ -1,3 +1,4 @@
+from sklearn.model_selection import cross_validate, train_test_split
 import os
 import joblib
 import pandas as pd
@@ -123,3 +124,86 @@ output_path = os.path.join(
 results_df.to_csv(output_path, index=False)
 
 print("\nEvaluation results saved successfully!")
+
+# ==========================================
+# 6. PERFORM 5-FOLD CROSS-VALIDATION
+# ==========================================
+
+print("\n==========================================")
+print("5-FOLD CROSS-VALIDATION")
+print("==========================================")
+
+# Load the original training data
+processed_data_path = os.path.join(
+    base_path,
+    "dataset",
+    "processed_laptops.csv"
+)
+
+processed_data = pd.read_csv(processed_data_path)
+
+features = [
+    "Brand",
+    "Processor_Family",
+    "Generation_Category",
+    "Generation_Number",
+    "RAM_GB",
+    "HDD_GB",
+    "SSD_GB",
+    "Condition",
+    "Model_Family"
+]
+
+X = processed_data[features]
+y = processed_data["Price (NGN)"]
+
+# Recreate the same training split
+X_train, _, y_train, _ = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42
+)
+
+# Evaluate each model using 5-fold cross-validation
+cv_results = []
+
+for model_name, model in models.items():
+
+    scores = cross_validate(
+        model,
+        X_train,
+        y_train,
+        cv=5,
+        scoring={
+            "mae": "neg_mean_absolute_error",
+            "r2": "r2"
+        }
+    )
+
+    mean_mae = -scores["test_mae"].mean()
+    mean_r2 = scores["test_r2"].mean()
+
+    cv_results.append({
+        "Model": model_name,
+        "Mean MAE (NGN)": mean_mae,
+        "Mean R2 Score": mean_r2
+    })
+
+    print(f"\n{model_name}")
+    print(f"Mean MAE: ₦{mean_mae:,.2f}")
+    print(f"Mean R2 Score: {mean_r2:.4f}")
+
+
+# Save cross-validation results
+cv_results_df = pd.DataFrame(cv_results)
+
+cv_output_path = os.path.join(
+    base_path,
+    "documentation",
+    "cross_validation_results.csv"
+)
+
+cv_results_df.to_csv(cv_output_path, index=False)
+
+print("\nCross-validation results saved successfully!")
